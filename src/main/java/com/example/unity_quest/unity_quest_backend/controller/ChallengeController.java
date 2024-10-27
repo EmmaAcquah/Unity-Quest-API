@@ -30,9 +30,9 @@ public class ChallengeController {
     }
 
     @ResponseStatus(HttpStatus.CREATED) // 201
-    @PostMapping("save")
-    public Challenge save(@RequestBody Challenge challenge) {
-        return challengeService.saveChallenge(challenge);
+    @PostMapping("saveChallenge")
+    public Challenge save(@RequestBody Challenge newChallenge) {
+        return challengeService.saveChallenge(newChallenge);
     }
 
 }

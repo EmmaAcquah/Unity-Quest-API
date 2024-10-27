@@ -30,4 +30,8 @@ public class UserService {
         }
         return user.get();
     }
+
+    public User saveChallenge(User user) {
+        return userRepository.save(user);
+    }
 }
